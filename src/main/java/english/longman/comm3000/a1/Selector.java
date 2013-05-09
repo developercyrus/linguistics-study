@@ -12,8 +12,7 @@ public class Selector {
     public Selector() throws ClassNotFoundException, SQLException, IOException {
         Extractor e = new Extractor();
         List<FreqWord> freqWords = e.getFreqWords();
-        
-        
+
         Class.forName("org.hsqldb.jdbc.JDBCDriver");
         Connection conn = DriverManager.getConnection("jdbc:hsqldb:file:src/main/resources/english/longman/comm3000/a1/db;", "SA", "");
         conn.createStatement().executeUpdate("drop table if exists word");
