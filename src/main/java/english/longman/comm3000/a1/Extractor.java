@@ -21,6 +21,7 @@ public class Extractor {
          * 
          */
         
+        
         FreqWord freqWord;
 
         Set<String> posSet = new TreeSet<String>();
